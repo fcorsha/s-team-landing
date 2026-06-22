@@ -1207,3 +1207,137 @@ body.text-xl { font-size: 1.22rem; }
 }
 .legal-wrap a { color: var(--gold); text-decoration: underline; }
 .legal-wrap a:hover { color: var(--gold-light); }
+
+/* ══════════════════════════════════════════════════════════
+   VISUAL EFFECTS  (effects.js companion styles)
+══════════════════════════════════════════════════════════ */
+
+/* ── Scroll progress bar ── */
+.scroll-progress {
+  position: fixed;
+  top: 0; left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #C8A84B 0%, #f7e099 50%, #C8A84B 100%);
+  background-size: 200% 100%;
+  animation: progress-shimmer 2s linear infinite;
+  z-index: 10000;
+  width: 0%;
+  pointer-events: none;
+  border-radius: 0 2px 2px 0;
+}
+@keyframes progress-shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ── Hero canvas (particles) ── */
+.hero-canvas {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ── Gold shimmer on hero S-TEAM title ── */
+@keyframes gold-shimmer {
+  0%   { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
+.hero-title .gold-text {
+  background: linear-gradient(100deg, #b8892e 0%, #f7e099 30%, #ffe566 50%, #f7e099 70%, #b8892e 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gold-shimmer 2.8s linear infinite;
+}
+
+/* ── Hero badge entrance ── */
+@keyframes badge-pop {
+  0%   { opacity: 0; transform: translateY(-16px) scale(.9); }
+  70%  { transform: translateY(3px) scale(1.03); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+.hero-badge {
+  animation: badge-pop .7s .05s cubic-bezier(.22,.68,0,1.2) both;
+}
+
+/* ── Hero title words slide ── */
+@keyframes word-rise {
+  from { opacity: 0; transform: translateY(32px); filter: blur(4px); }
+  to   { opacity: 1; transform: translateY(0);    filter: blur(0);   }
+}
+.hero-title {
+  animation: word-rise .7s .2s ease-out both;
+}
+.hero-sub {
+  animation: word-rise .7s .36s ease-out both;
+}
+.hero-stats {
+  animation: word-rise .6s .52s ease-out both;
+}
+.hero-form-wrap {
+  animation: word-rise .7s .12s ease-out both;
+}
+
+/* ── Hero form glow on load ── */
+@keyframes form-glow-pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(200,168,75,.0); }
+  40%  { box-shadow: 0 0 40px 8px rgba(200,168,75,.28); }
+  100% { box-shadow: 0 0 0 0 rgba(200,168,75,.0); }
+}
+.hero-form-wrap.hero-form-glow .hero-form {
+  animation: form-glow-pulse 1.4s ease-out forwards;
+}
+
+/* ── Button ripple ── */
+.btn { position: relative; overflow: hidden; }
+.btn-ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255,255,255,.22);
+  transform: scale(0);
+  animation: ripple-out .65s ease-out forwards;
+  pointer-events: none;
+}
+@keyframes ripple-out {
+  to { transform: scale(1); opacity: 0; }
+}
+
+/* ── Section title underline animate ── */
+.title-anim::after {
+  width: 0;
+  transition: width .7s .15s cubic-bezier(.22,.68,0,1.1);
+}
+.title-anim--in::after {
+  width: 48px;
+}
+
+/* ── Card will-change for tilt ── */
+.benefit-card, .domain-card { will-change: transform; }
+
+/* ── No-animations & reduced-motion overrides ── */
+body.no-animations .scroll-progress { animation: none !important; }
+body.no-animations .hero-badge,
+body.no-animations .hero-title,
+body.no-animations .hero-sub,
+body.no-animations .hero-stats,
+body.no-animations .hero-form-wrap { animation: none !important; opacity: 1; transform: none; filter: none; }
+body.no-animations .hero-title .gold-text { animation: none !important; }
+body.no-animations .btn-ripple { display: none !important; }
+body.no-animations .title-anim::after { transition: none !important; }
+
+body.high-contrast .hero-title .gold-text {
+  background: none;
+  -webkit-text-fill-color: #FFD700;
+  animation: none;
+}
+body.high-contrast .scroll-progress { background: #FFD700; animation: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-progress { animation: none !important; }
+  .hero-badge, .hero-title, .hero-sub, .hero-stats, .hero-form-wrap { animation: none !important; opacity: 1; transform: none; }
+  .hero-title .gold-text { animation: none !important; }
+  .btn-ripple { display: none !important; }
+  .title-anim::after { transition: none !important; width: 48px; }
+}
