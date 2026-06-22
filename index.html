@@ -27,12 +27,12 @@
      HEADER
      ========================================= -->
 <header class="site-header" id="top">
-  <div class="header-inner container">
+  <nav class="site-nav container" aria-label="ניווט ראשי">
     <a href="#hero-form" class="btn btn--gold header-cta">הגש מועמדות</a>
     <a href="#top" class="header-logo" aria-label="S-TEAM - חזרה לראש הדף">
-      <img src="assets/logo.png" alt="לוגו S-TEAM" class="logo-img">
+      <img src="assets/logo.svg" alt="לוגו S-TEAM" class="logo-img">
     </a>
-  </div>
+  </nav>
 </header>
 
 <!-- =========================================
@@ -426,13 +426,46 @@
 </section>
 
 <!-- =========================================
+     TRUST STRIP
+     ========================================= -->
+<section class="trust-strip" id="trust" aria-labelledby="trust-title">
+  <div class="container">
+    <div class="section-header fade-in">
+      <h2 id="trust-title" class="section-title trust-title">היכן אנחנו פועלים</h2>
+    </div>
+    <div class="trust-tags fade-in" role="list">
+      <span class="trust-tag" role="listitem">אבטחת אצטדיונים</span>
+      <span class="trust-tag" role="listitem">משחקי כדורגל</span>
+      <span class="trust-tag" role="listitem">כדורסל</span>
+      <span class="trust-tag" role="listitem">הופעות מוזיקה</span>
+      <span class="trust-tag" role="listitem">פסטיבלים</span>
+      <span class="trust-tag" role="listitem">חתונות ואירועים פרטיים</span>
+      <span class="trust-tag" role="listitem">בר/בת מצוות</span>
+      <span class="trust-tag" role="listitem">כינוסים עסקיים</span>
+      <span class="trust-tag" role="listitem">ערבי גאלה</span>
+      <span class="trust-tag" role="listitem">אירועי VIP</span>
+      <span class="trust-tag" role="listitem">מופעי סטנדאפ</span>
+      <span class="trust-tag" role="listitem">ערבי תרבות</span>
+      <span class="trust-tag" role="listitem">תיאטרון</span>
+      <span class="trust-tag" role="listitem">ימי כיף לחברות</span>
+      <span class="trust-tag" role="listitem">אבטחת קניונים</span>
+      <span class="trust-tag" role="listitem">מוסדות חינוך</span>
+      <span class="trust-tag" role="listitem">אירועי ספורט</span>
+      <span class="trust-tag" role="listitem">מרתונים</span>
+      <span class="trust-tag" role="listitem">אירועי רשויות מקומיות</span>
+      <span class="trust-tag" role="listitem">ירידים ותערוכות</span>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
      FOOTER
      ========================================= -->
 <footer class="site-footer" role="contentinfo">
   <div class="container footer-inner">
 
     <div class="footer-brand">
-      <img src="assets/logo.png" alt="לוגו S-TEAM" class="footer-logo-img">
+      <img src="assets/logo.svg" alt="לוגו S-TEAM" class="footer-logo-img">
       <p class="footer-tagline">אבטחה מקצועית לאירועים</p>
     </div>
 
@@ -476,7 +509,13 @@
   <button class="a11y-toggle" id="a11y-toggle-btn"
           aria-label="פתח אפשרויות נגישות"
           aria-expanded="false"
-          aria-controls="a11y-panel">♿</button>
+          aria-controls="a11y-panel">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="white" aria-hidden="true">
+      <circle cx="12" cy="4" r="2"/>
+      <path d="M9 8h6l-1.2 5.5H16a1 1 0 010 2h-2.5l-1 4a1 1 0 01-1 .8 1 1 0 01-1-.8l-1-4H7a1 1 0 010-2h1.2L9 8z"/>
+      <path d="M9 14.5A4.5 4.5 0 0012 20a4.5 4.5 0 003-8" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>
+  </button>
   <div class="a11y-panel" id="a11y-panel"
        role="region"
        aria-label="אפשרויות נגישות"

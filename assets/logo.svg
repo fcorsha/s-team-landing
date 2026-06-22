@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 148" role="img" aria-label="S-TEAM לוגו">
+  <!-- Shield outer -->
+  <path d="M60 6 L108 20 L108 76 Q108 124 60 140 Q12 124 12 76 L12 20 Z"
+        fill="#1A3A5C" stroke="#C8A84B" stroke-width="3.5"/>
+  <!-- Shield inner border line -->
+  <path d="M60 14 L101 26 L101 76 Q101 116 60 130 Q19 116 19 76 L19 26 Z"
+        fill="none" stroke="#C8A84B" stroke-width="1" opacity="0.45"/>
+  <!-- S letter -->
+  <text x="60" y="82"
+        font-family="'Arial Black', 'Arial Bold', Arial, sans-serif"
+        font-size="58"
+        font-weight="900"
+        fill="#C8A84B"
+        text-anchor="middle"
+        dominant-baseline="middle">S</text>
+  <!-- S-TEAM text -->
+  <text x="60" y="116"
+        font-family="Arial, sans-serif"
+        font-size="11"
+        font-weight="700"
+        fill="#FFFFFF"
+        text-anchor="middle"
+        letter-spacing="4">S-TEAM</text>
+</svg>

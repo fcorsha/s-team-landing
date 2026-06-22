@@ -29,10 +29,13 @@
   --shadow-md:    0 4px 20px rgba(0,0,0,0.10);
   --shadow-gold:  0 4px 24px rgba(201,151,62,0.28);
 
+  --navy:         #1A3A5C;
+  --brand-gold:   #C8A84B;
+
   --max-w:        1100px;
   --px:           20px;
   --section-py:   88px;
-  --header-h:     80px;
+  --header-h:     64px;
 }
 
 /* ---------- Reset ---------- */
@@ -162,19 +165,22 @@ a:hover { color: var(--gold-light); }
 .cookie-actions { display: flex; gap: 10px; flex-shrink: 0; }
 .cookie-banner.hidden { display: none; }
 
-/* ---------- Header ---------- */
+/* ---------- Header / Nav ---------- */
 .site-header {
-  position: fixed;
+  position: sticky;
   top: 0;
-  inset-inline: 0;
-  z-index: 1000;
+  z-index: 100;
   height: var(--header-h);
-  background: #FFFFFF;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
-  transition: box-shadow .3s;
+  background: rgba(26, 58, 92, 0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: box-shadow .3s, background .3s;
 }
-.site-header.scrolled { box-shadow: 0 2px 24px rgba(0,0,0,0.13); }
-.header-inner {
+.site-header.scrolled {
+  background: rgba(26, 58, 92, 0.97);
+  box-shadow: 0 2px 24px rgba(0,0,0,0.25);
+}
+.site-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -182,9 +188,9 @@ a:hover { color: var(--gold-light); }
 }
 .header-logo { display: flex; align-items: center; text-decoration: none; }
 .logo-img {
-  height: 70px;
+  height: 48px;
   width: auto;
-  max-width: 220px;
+  max-width: 160px;
   object-fit: contain;
 }
 .header-cta { font-size: .95rem; }
@@ -196,7 +202,6 @@ a:hover { color: var(--gold-light); }
   display: flex;
   align-items: center;
   overflow: hidden;
-  padding-top: var(--header-h);
 }
 
 /* וידאו */
@@ -834,12 +839,10 @@ a:hover { color: var(--gold-light); }
 @media (min-width: 768px) { .footer-brand { align-items: flex-end; } }
 
 .footer-logo-img {
-  height: 56px;
+  height: 60px;
   width: auto;
   max-width: 180px;
   object-fit: contain;
-  filter: brightness(0) invert(1);
-  opacity: .85;
 }
 .footer-tagline { font-size: .85rem; color: rgba(255,255,255,0.45); }
 
@@ -929,13 +932,13 @@ a:hover { color: var(--gold-light); }
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: var(--gold);
+  background: #C8A84B;
   color: #fff;
-  border: none;
-  font-size: 1.5rem;
+  border: 2px solid rgba(255,255,255,0.25);
+  font-size: 1rem;
   line-height: 1;
   cursor: pointer;
-  box-shadow: 0 4px 16px rgba(201,151,62,0.45);
+  box-shadow: 0 4px 16px rgba(200,168,75,0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -943,7 +946,7 @@ a:hover { color: var(--gold-light); }
   flex-shrink: 0;
   margin-left: -8px;
 }
-.a11y-toggle:hover { transform: scale(1.1); box-shadow: 0 6px 22px rgba(201,151,62,0.55); }
+.a11y-toggle:hover { transform: scale(1.1); box-shadow: 0 6px 22px rgba(200,168,75,0.65); }
 
 .a11y-panel {
   background: var(--bg);
@@ -1012,11 +1015,46 @@ body.no-animations *::after {
 }
 body.no-animations .fade-in { opacity: 1 !important; transform: none !important; }
 
+/* ---------- Trust Strip ---------- */
+.trust-strip {
+  background: var(--navy);
+  padding-block: var(--section-py);
+}
+.trust-title {
+  color: #fff;
+}
+.trust-title::after {
+  background: var(--brand-gold);
+}
+.trust-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.trust-tag {
+  display: inline-block;
+  background: transparent;
+  border: 1px solid var(--brand-gold);
+  color: #fff;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: .875rem;
+  font-weight: 500;
+  font-family: var(--font);
+  transition: background .2s, color .2s;
+  cursor: default;
+}
+.trust-tag:hover {
+  background: rgba(200, 168, 75, 0.18);
+  color: var(--brand-gold);
+}
+
 /* ---------- Mobile ---------- */
 @media (max-width: 768px) {
-  :root { --header-h: 68px; --section-py: 64px; }
+  :root { --header-h: 64px; --section-py: 64px; }
 
-  .logo-img { height: 60px; }
+  .logo-img { height: 40px; }
 
   .hero-inner {
     flex-direction: column;
