@@ -16,7 +16,7 @@ function submitToMake(data, onSuccess, onError) {
   })
     .then(function(r) { return r.ok ? r.json().catch(function(){ return {}; }) : Promise.reject(r.status); })
     .then(function(json) { onSuccess(json && json.whatsapp_url ? json.whatsapp_url : WA_URL); })
-    .catch(function()   { onSuccess(WA_URL); }); /* גם בשגיאה — שולחים לוואטסאפ */
+    .catch(function()   { onSuccess(WA_URL); }); /* גם בשגיאה,שולחים לוואטסאפ */
 }
 
 function redirectToWA(url) {

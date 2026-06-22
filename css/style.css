@@ -208,7 +208,7 @@ a:hover { color: var(--gold-light); }
   object-fit: cover;
   z-index: 0;
 }
-/* fallback תמונה — מוצגת מאחורי הוידאו; נגלית אם הוידאו לא נטען */
+/* fallback תמונה,מוצגת מאחורי הוידאו; נגלית אם הוידאו לא נטען */
 .hero-video-fallback {
   position: absolute;
   inset: 0;
@@ -235,7 +235,7 @@ a:hover { color: var(--gold-light); }
   width: 100%;
 }
 
-/* Hero text — ימין (RTL start) */
+/* Hero text,ימין (RTL start) */
 .hero-text { flex: 1; max-width: 560px; }
 
 .hero-badge {
@@ -286,7 +286,7 @@ a:hover { color: var(--gold-light); }
 .stat-label{ display: block; font-size: .72rem; color: rgba(255,255,255,0.65); margin-top: 3px; }
 .stat-divider { width: 1px; height: 36px; background: rgba(201,151,62,0.25); flex-shrink: 0; }
 
-/* Hero floating form — שמאל (RTL end) */
+/* Hero floating form,שמאל (RTL end) */
 .hero-form-wrap {
   flex-shrink: 0;
   width: 340px;
@@ -515,7 +515,7 @@ a:hover { color: var(--gold-light); }
 .domain-img { width: 100%; height: 100%; object-fit: cover; transition: transform .35s; display: block; }
 .domain-card:hover .domain-img { transform: scale(1.04); }
 
-/* Placeholder — מוצג תמיד מאחורי התמונה; נגלה כשהתמונה נכשלת */
+/* Placeholder,מוצג תמיד מאחורי התמונה; נגלה כשהתמונה נכשלת */
 .domain-img-placeholder {
   position: absolute;
   inset: 0;
@@ -531,9 +531,9 @@ a:hover { color: var(--gold-light); }
   pointer-events: none;
   z-index: 0; /* מאחורי התמונה */
 }
-/* כשהתמונה עולה בהצלחה — מסתירים placeholder */
+/* כשהתמונה עולה בהצלחה,מסתירים placeholder */
 .domain-img-wrap:not(.img-error) .domain-img-placeholder { opacity: 0; }
-/* כשיש שגיאה — מציגים placeholder */
+/* כשיש שגיאה,מציגים placeholder */
 .domain-img-wrap.img-error .domain-img-placeholder { opacity: 1; z-index: 1; }
 
 .domain-body { padding: 22px 20px; }
