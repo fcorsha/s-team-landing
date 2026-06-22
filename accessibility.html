@@ -122,36 +122,42 @@
 <!-- A11Y WIDGET -->
 <div class="a11y-widget" id="a11y-widget" dir="ltr">
   <button class="a11y-toggle" id="a11y-toggle-btn"
-          aria-label="פתח אפשרויות נגישות"
+          aria-label="הגדרות נגישות"
           aria-expanded="false"
-          aria-controls="a11y-panel">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="white" aria-hidden="true">
-      <circle cx="12" cy="4" r="2"/>
+          aria-controls="a11y-panel"
+          aria-haspopup="true">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="26" fill="white" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="4" r="2.2"/>
       <path d="M9 8h6l-1.2 5.5H16a1 1 0 010 2h-2.5l-1 4a1 1 0 01-1 .8 1 1 0 01-1-.8l-1-4H7a1 1 0 010-2h1.2L9 8z"/>
       <path d="M9 14.5A4.5 4.5 0 0012 20a4.5 4.5 0 003-8" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
     </svg>
+    <span class="a11y-toggle-text" aria-hidden="true">נגישות</span>
   </button>
   <div class="a11y-panel" id="a11y-panel"
        role="region"
-       aria-label="אפשרויות נגישות"
+       aria-labelledby="a11y-panel-heading"
        hidden
        dir="rtl">
-    <p class="a11y-panel-title">נגישות</p>
-    <button class="a11y-option" id="a11y-text-btn" aria-label="הגדלת גודל טקסט">
+    <h2 class="a11y-panel-title" id="a11y-panel-heading">נגישות</h2>
+    <button class="a11y-option" id="a11y-text-btn" aria-label="גודל טקסט: רגיל — לחץ לשינוי" aria-pressed="false">
       <span class="a11y-option-icon" aria-hidden="true">A+</span>
-      <span class="a11y-option-label">גודל טקסט</span>
+      <span class="a11y-option-label">גודל טקסט: רגיל</span>
     </button>
-    <button class="a11y-option" id="a11y-contrast-btn" aria-label="ניגודיות גבוהה">
+    <button class="a11y-option" id="a11y-contrast-btn" aria-label="ניגודיות גבוהה" aria-pressed="false">
       <span class="a11y-option-icon" aria-hidden="true">◑</span>
       <span class="a11y-option-label">ניגודיות גבוהה</span>
     </button>
-    <button class="a11y-option" id="a11y-anim-btn" aria-label="ביטול אנימציות">
+    <button class="a11y-option" id="a11y-anim-btn" aria-label="ביטול אנימציות" aria-pressed="false">
       <span class="a11y-option-icon" aria-hidden="true">⏸</span>
       <span class="a11y-option-label">ביטול אנימציות</span>
     </button>
-    <div class="a11y-option a11y-sr-info">
-      <span class="a11y-option-icon" aria-hidden="true">👁</span>
-      <span class="a11y-option-label">תואם קוראי מסך</span>
+    <button class="a11y-option" id="a11y-reset-btn" aria-label="איפוס הגדרות נגישות">
+      <span class="a11y-option-icon" aria-hidden="true">↺</span>
+      <span class="a11y-option-label">איפוס הגדרות</span>
+    </button>
+    <div class="a11y-option a11y-sr-info" role="note">
+      <span class="a11y-option-icon" aria-hidden="true">♿</span>
+      <span class="a11y-option-label">תואם NVDA, JAWS, VoiceOver</span>
     </div>
   </div>
 </div>
