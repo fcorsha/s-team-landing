@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="S-TEAM מגייסת מאבטחים לאירועים, ספורט והופעות. שכר 40-50 ₪ לשעה, הכשרה על חשבוננו. הגש מועמדות עכשיו.">
+  <title>S-TEAM · מצטרפים לצוות | גיוס מאבטחים</title>
+
+  <!-- Google Fonts: Assistant (Hebrew-friendly) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Canonical + OG (לסיום) -->
+  <meta property="og:title" content="S-TEAM · מגייסים מאבטחים">
+  <meta property="og:description" content="עבודה דינמית, שכר הוגן, הכשרה על חשבוננו. הגש מועמדות עכשיו.">
+  <meta property="og:image" content="assets/hero-bg.webp">
+  <meta property="og:type" content="website">
+</head>
+<body>
+
+<!-- =============================================
+     באנר עוגיות (תאימות GDPR / תיקון 13)
+     ============================================= -->
+<div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="הודעת עוגיות" aria-live="polite">
+  <p>אנו משתמשים בעוגיות לשיפור חווית הגלישה. המשך גלישה מהווה הסכמה.
+    <a href="privacy.html">מדיניות פרטיות</a>
+  </p>
+  <div class="cookie-actions">
+    <button id="cookie-accept" class="btn btn--primary btn--sm">אני מסכים/ה</button>
+    <button id="cookie-decline" class="btn btn--ghost btn--sm">סגור</button>
+  </div>
+</div>
+
+
+<!-- =============================================
+     HERO
+     ============================================= -->
+<header class="hero" id="top">
+
+  <!-- תמונת רקע: קבוצת מאבטחים, אור יום, מקצועי -->
+  <!-- להחליף src כשהתמונה מגיעה: assets/hero-bg.webp -->
+  <div class="hero__bg"
+       style="background-image: url('assets/hero-bg.webp');"
+       role="img"
+       aria-label="צוות מאבטחי S-TEAM בשטח">
+    <!-- placeholder עד שהתמונה עולה -->
+    <div class="hero__bg-placeholder" aria-hidden="true">
+      <span>📸 hero-bg.webp</span>
+    </div>
+  </div>
+  <div class="hero__overlay" aria-hidden="true"></div>
+
+  <!-- לוגו -->
+  <div class="hero__logo">
+    <!-- להחליף ב-<img src="assets/logo.svg" alt="S-TEAM"> כשהלוגו מגיע -->
+    <div class="logo-placeholder" aria-label="לוגו S-TEAM">S-TEAM</div>
+  </div>
+
+  <div class="hero__content container">
+    <h1 class="hero__title">מצטרפים לצוות S-TEAM</h1>
+    <p class="hero__sub">
+      עבודה דינמית באבטחת אירועים&nbsp;
+      <span class="hero__sep">|</span>&nbsp;
+      שכר 40–50 ₪ לשעה&nbsp;
+      <span class="hero__sep">|</span>&nbsp;
+      הכשרה על חשבוננו
+    </p>
+    <a href="#form" class="btn btn--cta hero__cta">
+      השאר פרטים ←
+    </a>
+  </div>
+
+</header>
+
+
+<!-- =============================================
+     מה אנחנו מציעים
+     ============================================= -->
+<section class="section benefits" id="benefits" aria-labelledby="benefits-title">
+  <div class="container">
+    <h2 id="benefits-title" class="section__title">מה אנחנו מציעים</h2>
+    <p class="section__sub">סיבות טובות להצטרף לצוות</p>
+
+    <div class="benefits__grid">
+
+      <div class="benefit-card">
+        <div class="benefit-card__icon" aria-hidden="true">💰</div>
+        <h3 class="benefit-card__title">שכר הוגן</h3>
+        <p class="benefit-card__text">40–50 ₪ לשעה, בהתאם לסוג העבודה והמיקום. שכר שמשקף מקצועיות.</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-card__icon" aria-hidden="true">🎓</div>
+        <h3 class="benefit-card__title">הכשרה על חשבוננו</h3>
+        <p class="benefit-card__text">אין לך ניסיון? לא בעיה. אנחנו מכשירים אותך מאפס — בלי הוצאה מכיסך.</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-card__icon" aria-hidden="true">⚡</div>
+        <h3 class="benefit-card__title">עבודה דינמית</h3>
+        <p class="benefit-card__text">הופעות, אירועי ספורט, כינוסים — כל יום שונה. לא משרד, לא שגרה.</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-card__icon" aria-hidden="true">🏢</div>
+        <h3 class="benefit-card__title">חברה מסודרת</h3>
+        <p class="benefit-card__text">הוקמנו ב-2024 וגדלנו מהר. ניהול ישר, תשלום בזמן, תנאים ברורים.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     מי אנחנו מחפשים
+     ============================================= -->
+<section class="section requirements" id="requirements" aria-labelledby="req-title">
+  <div class="container">
+    <h2 id="req-title" class="section__title">מי אנחנו מחפשים</h2>
+    <p class="section__sub">אנחנו מחפשים אנשים אמינים, רציניים, שרוצים לצמוח</p>
+
+    <div class="requirements__cols">
+
+      <div class="req-block req-block--must">
+        <h3 class="req-block__title">
+          <span class="req-block__badge req-block__badge--must" aria-hidden="true">חובה</span>
+        </h3>
+        <ul class="req-list" role="list">
+          <li>גיל 21–60</li>
+          <li>עברית רהוטה (דיבור וקריאה)</li>
+          <li>נכונות לעבור הכשרה ולהתחייב לשנה</li>
+          <li>נכונות לעבודה בשעות לא שגרתיות (ערבים, סופ"ש)</li>
+        </ul>
+      </div>
+
+      <div class="req-block req-block--plus">
+        <h3 class="req-block__title">
+          <span class="req-block__badge req-block__badge--plus" aria-hidden="true">יתרון</span>
+        </h3>
+        <ul class="req-list" role="list">
+          <li>ניידות עצמית (רכב)</li>
+          <li>ניסיון קודם באבטחה</li>
+          <li>הכשרה כבודק ביטחוני / סדרן ספורט / מאבטח אירועי תרבות</li>
+          <li>שירות קרבי / רקע ביטחוני</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <p class="requirements__note">
+      ❌ <strong>לא נדרש רישיון נשק.</strong> אנחנו מחפשים בני אדם טובים — לא גיבורי אקשן.
+    </p>
+
+  </div>
+</section>
+
+
+<!-- =============================================
+     תחומי האבטחה שלנו (גלריה)
+     ============================================= -->
+<section class="section gallery-section" id="domains" aria-labelledby="gallery-title">
+  <div class="container">
+    <h2 id="gallery-title" class="section__title">תחומי האבטחה שלנו</h2>
+    <p class="section__sub">כל אירוע — אנחנו שם</p>
+
+    <div class="gallery">
+
+      <!-- כרטיס 1: ספורט — תמונה: אצטדיון כדורגל -->
+      <div class="gallery-card">
+        <div class="gallery-card__img-wrap">
+          <img
+            src="assets/gallery/sport.webp"
+            alt="אבטחת אירועי ספורט - אצטדיון כדורגל"
+            loading="lazy"
+            class="gallery-card__img"
+            onerror="this.parentElement.classList.add('img-placeholder')"
+          >
+          <!-- placeholder טקסט עד שהתמונה עולה -->
+          <div class="gallery-card__placeholder" aria-hidden="true">📸 sport.webp</div>
+        </div>
+        <div class="gallery-card__body">
+          <h3 class="gallery-card__title">אירועי ספורט</h3>
+          <p class="gallery-card__text">משחקי כדורגל, כדורסל, ואירועי ספורט גדולים — ניהול קהל מקצועי.</p>
+        </div>
+      </div>
+
+      <!-- כרטיס 2: אירועים — תמונה: כינוס גדול בחוץ -->
+      <div class="gallery-card">
+        <div class="gallery-card__img-wrap">
+          <img
+            src="assets/gallery/events.webp"
+            alt="אבטחת כינוסים ואירועים גדולים"
+            loading="lazy"
+            class="gallery-card__img"
+            onerror="this.parentElement.classList.add('img-placeholder')"
+          >
+          <div class="gallery-card__placeholder" aria-hidden="true">📸 events.webp</div>
+        </div>
+        <div class="gallery-card__body">
+          <h3 class="gallery-card__title">אירועים והופעות</h3>
+          <p class="gallery-card__text">כינוסים, פסטיבלים, הופעות מוזיקה — ניסיון עם אלפי מבקרים.</p>
+        </div>
+      </div>
+
+      <!-- כרטיס 3: תרבות — תמונה: אבטחת מוסד -->
+      <div class="gallery-card">
+        <div class="gallery-card__img-wrap">
+          <img
+            src="assets/gallery/culture.webp"
+            alt="אבטחת אירועי תרבות ומוסדות"
+            loading="lazy"
+            class="gallery-card__img"
+            onerror="this.parentElement.classList.add('img-placeholder')"
+          >
+          <div class="gallery-card__placeholder" aria-hidden="true">📸 culture.webp</div>
+        </div>
+        <div class="gallery-card__body">
+          <h3 class="gallery-card__title">אירועי תרבות</h3>
+          <p class="gallery-card__text">תיאטרון, ערבי תרבות, מוסדות ציבור — אבטחה שקטה ומכובדת.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     טופס הגשת מועמדות
+     ============================================= -->
+<section class="section form-section" id="form" aria-labelledby="form-title">
+  <div class="container">
+    <h2 id="form-title" class="section__title">הגש מועמדות עכשיו</h2>
+    <p class="section__sub">ממלאים, שולחים — מיקי חוזר אליך תוך יום עסקים</p>
+
+    <form
+      id="application-form"
+      class="app-form"
+      novalidate
+      aria-label="טופס הגשת מועמדות"
+    >
+
+      <!-- שם מלא -->
+      <div class="form-group">
+        <label for="name" class="form-label">שם מלא <span class="req-star" aria-hidden="true">*</span></label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          class="form-input"
+          placeholder="ישראל ישראלי"
+          required
+          autocomplete="name"
+          aria-required="true"
+        >
+        <span class="form-error" id="name-error" role="alert" aria-live="polite"></span>
+      </div>
+
+      <!-- טלפון -->
+      <div class="form-group">
+        <label for="phone" class="form-label">טלפון נייד <span class="req-star" aria-hidden="true">*</span></label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          class="form-input"
+          placeholder="050-0000000"
+          required
+          autocomplete="tel"
+          aria-required="true"
+          inputmode="tel"
+          pattern="[0-9\-\+\s]{9,15}"
+        >
+        <span class="form-error" id="phone-error" role="alert" aria-live="polite"></span>
+      </div>
+
+      <!-- גיל -->
+      <div class="form-group">
+        <label for="age" class="form-label">גיל <span class="req-star" aria-hidden="true">*</span></label>
+        <input
+          type="number"
+          id="age"
+          name="age"
+          class="form-input form-input--short"
+          placeholder="25"
+          required
+          min="21"
+          max="60"
+          aria-required="true"
+          inputmode="numeric"
+        >
+        <span class="form-error" id="age-error" role="alert" aria-live="polite"></span>
+      </div>
+
+      <!-- אזור מגורים -->
+      <div class="form-group">
+        <label for="region" class="form-label">אזור מגורים <span class="req-star" aria-hidden="true">*</span></label>
+        <select id="region" name="region" class="form-select" required aria-required="true">
+          <option value="" disabled selected>בחר אזור...</option>
+          <option value="צפון">צפון (מנהריה–חיפה)</option>
+          <option value="חיפה">חיפה והסביבה</option>
+          <option value="מרכז">מרכז (חיפה–ראשון לציון)</option>
+        </select>
+        <span class="form-error" id="region-error" role="alert" aria-live="polite"></span>
+      </div>
+
+      <!-- ניסיון באבטחה -->
+      <div class="form-group">
+        <label for="experience" class="form-label">ניסיון באבטחה</label>
+        <select id="experience" name="experience" class="form-select">
+          <option value="אין" selected>אין ניסיון קודם</option>
+          <option value="עד שנה">עד שנה</option>
+          <option value="1-3 שנים">1–3 שנים</option>
+          <option value="מעל 3 שנים">מעל 3 שנים</option>
+        </select>
+      </div>
+
+      <!-- רישיון נשק -->
+      <div class="form-group form-group--checkbox">
+        <label class="form-checkbox-label">
+          <input type="checkbox" id="weapon_license" name="weapon_license" class="form-checkbox">
+          <span class="form-checkbox-custom" aria-hidden="true"></span>
+          יש לי רישיון נשק (לא חובה)
+        </label>
+      </div>
+
+      <!-- הסכמה -->
+      <div class="form-group form-group--checkbox">
+        <label class="form-checkbox-label form-checkbox-label--consent">
+          <input
+            type="checkbox"
+            id="consent"
+            name="consent"
+            class="form-checkbox"
+            required
+            aria-required="true"
+          >
+          <span class="form-checkbox-custom" aria-hidden="true"></span>
+          אני מאשר/ת שיצרו איתי קשר בנוגע למועמדות, ומסכים/ה ל<a href="privacy.html" target="_blank">מדיניות הפרטיות</a>
+          <span class="req-star" aria-hidden="true">*</span>
+        </label>
+        <span class="form-error" id="consent-error" role="alert" aria-live="polite"></span>
+      </div>
+
+      <!-- כפתור שליחה -->
+      <button type="submit" class="btn btn--cta form__submit" id="submit-btn">
+        <span class="submit-text">שלח פרטים</span>
+        <span class="submit-loading" aria-hidden="true" hidden>שולח...</span>
+      </button>
+
+      <!-- הודעת שגיאה כללית -->
+      <div id="form-error-msg" class="form-msg form-msg--error" role="alert" aria-live="assertive" hidden></div>
+      <!-- הודעת הצלחה (מוצגת לרגע לפני ריידרקט לוואטסאפ) -->
+      <div id="form-success-msg" class="form-msg form-msg--success" role="status" aria-live="polite" hidden>
+        ✅ הפרטים נשלחו בהצלחה! מיקי יחזור אליך בקרוב. מועברים לוואטסאפ...
+      </div>
+
+    </form>
+  </div>
+</section>
+
+
+<!-- =============================================
+     FAQ
+     ============================================= -->
+<section class="section faq" id="faq" aria-labelledby="faq-title">
+  <div class="container">
+    <h2 id="faq-title" class="section__title">שאלות נפוצות</h2>
+
+    <div class="faq__list">
+
+      <details class="faq-item">
+        <summary class="faq-item__q">כמה זמן נמשכת ההכשרה?</summary>
+        <div class="faq-item__a">
+          ההכשרה נמשכת בדרך כלל מספר ימים, בהתאם לתפקיד (בודק ביטחוני, סדרן ספורט, מאבטח אירועים). היא מתקיימת לפני תחילת העבודה ועל חשבון החברה לחלוטין.
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-item__q">האם ניתן לעבוד במשרה חלקית?</summary>
+        <div class="faq-item__a">
+          כן. עבודה באבטחת אירועים היא לרוב לפי שיבוץ — אפשר לעבוד כמה ימים בשבוע בהתאם לאירועים הקיימים. נשוחח על הציפיות שלך בשיחה הראשונה.
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-item__q">האם חובה שיהיה לי רישיון נשק?</summary>
+        <div class="faq-item__a">
+          לא. רישיון נשק אינו נדרש לרוב התפקידים שלנו. אנחנו עוסקים באבטחת אירועים ציבוריים — לא באבטחה מזוינת.
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-item__q">מתי מקבלים תגובה אחרי הגשת מועמדות?</summary>
+        <div class="faq-item__a">
+          מיקי חוזר לכל פונה תוך יום עסקים אחד. אם לא שמעתם ממנו — מוזמנים לפנות ישירות בוואטסאפ.
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-item__q">באילו אזורים אתם עובדים?</summary>
+        <div class="faq-item__a">
+          בעיקר בצפון הארץ (מנהריה עד חיפה) ובמרכז (חיפה עד ראשון לציון). לפעמים יש אירועים מחוץ לאזורים אלו — לפי שיקול דעת ובתיאום מראש.
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     FOOTER
+     ============================================= -->
+<footer class="footer" role="contentinfo">
+  <div class="container footer__inner">
+
+    <div class="footer__brand">
+      <!-- להחליף ב-<img src="assets/logo-white.svg" alt="S-TEAM"> כשהלוגו מגיע -->
+      <div class="logo-placeholder logo-placeholder--footer" aria-label="לוגו S-TEAM">S-TEAM</div>
+      <p class="footer__tagline">אבטחה מקצועית לאירועים</p>
+    </div>
+
+    <nav class="footer__links" aria-label="קישורי תאימות">
+      <a href="privacy.html">מדיניות פרטיות</a>
+      <a href="terms.html">תקנון</a>
+      <a href="accessibility.html">הצהרת נגישות</a>
+    </nav>
+
+    <p class="footer__copy">
+      © 2026 S-TEAM ·
+      <a href="mailto:Mikisteam54@gmail.com">Mikisteam54@gmail.com</a> ·
+      ח.פ 516773066
+    </p>
+
+  </div>
+</footer>
+
+
+<!-- =============================================
+     כפתור וואטסאפ צף
+     ============================================= -->
+<a
+  href="https://wa.me/972504999444?text=%D7%94%D7%99%D7%99%2C%20%D7%A8%D7%90%D7%99%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%94%D7%9E%D7%95%D7%93%D7%A2%D7%94%20%D7%95%D7%90%D7%A0%D7%99%20%D7%9E%D7%A2%D7%95%D7%A0%D7%99%D7%99%D7%9F%20%D7%9C%D7%94%D7%92%D7%99%D7%A9%20%D7%9E%D7%95%D7%A2%D7%9E%D7%93%D7%95%D7%AA"
+  class="whatsapp-float"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="פנה אלינו בוואטסאפ"
+  title="דברו איתנו בוואטסאפ"
+>
+  <!-- אייקון וואטסאפ SVG (inline, ללא תלות חיצונית) -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="white" width="32" height="32" aria-hidden="true" focusable="false">
+    <path d="M16 2C8.268 2 2 8.268 2 16c0 2.49.65 4.827 1.784 6.855L2 30l7.352-1.76A13.94 13.94 0 0016 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.5a11.44 11.44 0 01-5.83-1.6l-.42-.25-4.36 1.04 1.07-4.24-.27-.44A11.46 11.46 0 014.5 16C4.5 9.596 9.596 4.5 16 4.5S27.5 9.596 27.5 16 22.404 27.5 16 27.5zm6.29-8.54c-.34-.17-2.02-1-2.34-1.11-.32-.11-.55-.17-.78.17-.23.34-.89 1.11-1.09 1.34-.2.23-.4.26-.74.09-.34-.17-1.44-.53-2.74-1.69-1.01-.9-1.7-2.01-1.9-2.35-.2-.34-.02-.52.15-.69.15-.15.34-.4.51-.6.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.09-.17-.78-1.89-1.07-2.59-.28-.68-.57-.59-.78-.6h-.67c-.23 0-.6.09-.91.43-.31.34-1.19 1.16-1.19 2.83s1.22 3.28 1.39 3.51c.17.23 2.4 3.67 5.82 5.14.81.35 1.44.56 1.93.72.81.26 1.55.22 2.13.13.65-.1 2.02-.82 2.3-1.62.28-.8.28-1.48.2-1.62-.09-.14-.32-.23-.66-.4z"/>
+  </svg>
+  <span class="whatsapp-float__label">דברו איתנו</span>
+</a>
+
+
+<!-- =============================================
+     סקריפטים
+     ============================================= -->
+<script src="js/main.js"></script>
+<script src="js/form.js"></script>
+<script src="js/accessibility.js"></script>
+
+</body>
+</html>
