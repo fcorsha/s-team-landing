@@ -64,13 +64,14 @@ function redirectToWA(url) {
     errorEl.hidden = true;
 
     var data = {
-      name:      document.getElementById('hf-name').value.trim(),
-      phone:     document.getElementById('hf-phone').value.trim(),
-      region:    document.getElementById('hf-region').value,
-      experience:'אין',
+      name:           document.getElementById('hf-name').value.trim(),
+      phone:          document.getElementById('hf-phone').value.trim(),
+      age:            null,
+      region:         document.getElementById('hf-region').value,
+      experience:     'אין',
       weapon_license: false,
-      source:    'hero-form',
-      timestamp: new Date().toISOString()
+      source:         'hero-form',
+      timestamp:      new Date().toISOString()
     };
 
     submitToMake(data, function(waUrl) {
