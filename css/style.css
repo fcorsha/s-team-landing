@@ -276,7 +276,7 @@ a:hover { color: var(--gold-light); }
 .hero-sub strong { color: var(--gold-light); font-weight: 700; }
 
 .hero-stats {
-  display: flex;
+  display: inline-flex;
   gap: 0;
   align-items: center;
   background: rgba(0,0,0,0.4);
@@ -284,9 +284,8 @@ a:hover { color: var(--gold-light); }
   border-radius: var(--radius-md);
   backdrop-filter: blur(8px);
   overflow: hidden;
-  max-width: 420px;
 }
-.stat-item { flex: 1; padding: 16px 18px; text-align: center; }
+.stat-item { padding: 14px 28px; text-align: center; }
 .stat-num  { display: block; font-size: 1.45rem; font-weight: 800; line-height: 1.1; }
 .stat-label{ display: block; font-size: .72rem; color: rgba(255,255,255,0.65); margin-top: 3px; }
 .stat-divider { width: 1px; height: 36px; background: rgba(201,151,62,0.25); flex-shrink: 0; }
