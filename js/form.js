@@ -20,7 +20,8 @@ function submitToMake(data, onSuccess, onError) {
 }
 
 function redirectToWA(url) {
-  setTimeout(function() { window.location.href = url; }, 1800);
+  if (typeof fbq === 'function') fbq('track', 'Lead');
+  setTimeout(function() { window.location.href = url; }, 500);
 }
 
 /* ============================================
